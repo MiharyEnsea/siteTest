@@ -43,6 +43,24 @@ function moteurPlus(){
 				  		'<a class="btn btn-primary" onclick="moteurMoins()" role="button">Réduire</a>'+ 
 					"</div>";
 }
+function moteurPlus2(){
+	var txt = document.getElementById("textMoteur2");
+	txt.innerHTML="<div>"+
+  "Le moteur central <br><br>"+
+  "Est le standard sur les VAE neufs : il offre un couple important et une bonne sensation d'accompagnement du pédalage. Mais il nécessite un cadre spécifique, dont le style est très sportif (VTT) <br><br>"+
+  "De notre point de vue, c'est le compagnon idéal pour des randonnées de 80 km mais il est surdimensionné pour un usage urbain <br><br>"+
+  "Le moteur à l'avant nous semble une solution préférable en ville. Il"+ 
+  "<ul>"+
+    "<li>Est plus légér (~1 kg de moins)</li>"+
+    "<li> Est silencieux car il ne contient pas d'engrenage</li>"+
+    "<li>Suffit amplement pour un trajet de 10 km en zone urbaine</li>"+
+  "</ul>"+
+  
+"</div>"+
+					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
+				  		'<a class="btn btn-primary" onclick="moteurMoins2()" role="button">Réduire</a>'+ 
+					"</div>";
+}
 
 function moteurMoins(){
 	var txt = document.getElementById("textMoteur");
@@ -60,6 +78,25 @@ function moteurMoins(){
 
 					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
 				  		'<a class="btn btn-primary" onclick="moteurPlus()" role="button">En savoir plus</a>'+ 
+					"</div>";
+
+}
+function moteurMoins2(){
+	var txt = document.getElementById("textMoteur2");
+	txt.innerHTML="<div>"+
+				 		"Moteur dans la roue avant PROMOVEC à entraînement direct (non réducté)"+
+				 	"</div>"+					
+					"<ul>"+
+						"<li>2,0 kg</li>"+
+						"<li>250 W de puissance</li>"+
+						"<li>40 N.m de couple</li>"+						
+					"</ul>"+ 
+					"<div>"+
+						"Idéal pour un utilisateur de moins de 100 kg."+
+					"</div>"+
+
+					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
+				  		'<a class="btn btn-primary" onclick="moteurPlus2()" role="button">En savoir plus</a>'+ 
 					"</div>";
 
 }
@@ -86,7 +123,7 @@ function freinageMoins(){
 	var txt = document.getElementById("textFreinage");
 	txt.innerHTML = "Freins coupe circuit qui coupent le moteur dès qu'ils sont actionnés pour le freinage <br><br>"+
 			 	"Etriers d'origine conservés pour le style <br><br>"+
-			 	"Câbles, gaines et patins remplacés par des neufs	"+			
+			 	"Câbles, gaines et patins remplacés par des neufs"+			
 					
 					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
 				  		'<a class="btn btn-primary" onclick="freinagePlus()" role="button">En savoir plus</a>'+
@@ -111,6 +148,24 @@ function batteriePlus(){
 				  		'<a class="btn btn-primary" onclick="batterieMoins()" role="button">Réduire</a>'+ 
 					"</div>";
 }
+function batteriePlus2(){
+	var txt = document.getElementById("textBatterie2");
+	txt.innerHTML = "<ul>"+
+						"<li>Les cellules qui composent les batteries sont toutes fabriquées en Asie mais leur assemblage peut-être réalisé en Europe.</li>"+
+						"<li>Pour nos VAE urbains, nous privilégions le poids et la bonne intégration au style de vélo</li>"+
+						"<li>Nous avons opté pour une batterie"+
+						  "<ul>"+
+						    '<li>de forme "bidon'+ "d'eau" + "</li>"+
+						    "<li>aux dimensions réduites (H = 280 mm et D = 80 mm)</li>"+
+						     "<li> au poids de mobilité inférieur aux batteries de grande capacité qui équipent la plupart des VAE neufs (1,4 kg) => le vélo reste maniable.</li>"+
+						  "</ul>"+
+					  	"</li>"+
+												
+					"</ul>"+
+					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
+				  		'<a class="btn btn-primary" onclick="batterieMoins2()" role="button">Réduire</a>'+ 
+					"</div>";
+}
 function batterieMoins(){
 	var txt = document.getElementById("textBatterie");
 	txt.innerHTML = "<ul>"+
@@ -121,6 +176,18 @@ function batterieMoins(){
 					"</ul>"+
 					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
 				  		'<a class="btn btn-primary" onclick="batteriePlus()" role="button">En savoir plus</a>'+ 
+					"</div>";
+}
+function batterieMoins2(){
+	var txt = document.getElementById("textBatterie2");
+	txt.innerHTML = "<ul>"+
+						"<li>Format bidon d'eau <br> (H = 280 mm et diamètre = 80 mm)</li>"+
+						"<li>1,4 kg</li>"+
+						"<li>250 Wh</li>"+
+						"<li>25 à 40 km d'autonomie selon les conditions d'utilisation (charge en kg, niveau d'assistance choisi, dénivelé...)</li>"+						
+					"</ul>"+
+					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
+				  		'<a class="btn btn-primary" onclick="batteriePlus2()" role="button">En savoir plus</a>'+ 
 					"</div>";
 }
 
@@ -173,9 +240,24 @@ function selleriePlus(){
 					"</div>"+
 					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
 				  		'<a class="btn btn-primary" onclick="sellerieMoins()" role="button">Réduire</a>'+ 
-					"</div>";
+					"</div>";					
 }
 
+function selleriePlus2(){
+	var txt = document.getElementById("textSellerie2");
+	txt.innerHTML = "<div>"+
+					  "Le choix de la sellerie est un équilibre entre confort, style et coût. <br><br>"+
+					  "La sellerie d'origine (selle vinyle rembourrée, poignées en plastique) offrent un confort immédiat et conserve au vélo son caractère d'origine. <br><br>"+
+					  "Une sellerie cuir, plus coûteuse"+ 
+					  "<ul>"+
+					    "<li>est plus dure au départ et doit être"+' "faite à la morphologie du cycliste"'+ "(il faut accepter de souffrir un peu au début pour l'assouplir...) </li>"+
+					    "<li>renforce le caractère vintage et permet une harmonie avec les différents éléments de fixation divers (selle, sacoche de selle, ruban de poignées, sangle batterie...)</li>"+
+					  "</ul>"+
+					"</div>"+
+					'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
+				  		'<a class="btn btn-primary" onclick="sellerieMoins2()" role="button">Réduire</a>'+ 
+					"</div>";					
+}
 function sellerieMoins(){
 	var txt = document.getElementById("textSellerie");
 	txt.innerHTML = "Au choix"+			 						
@@ -190,6 +272,23 @@ function sellerieMoins(){
 						"</ul>"+
 						'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
 					  		'<a class="btn btn-primary" onclick="selleriePlus()" role="button">En savoir plus</a>'+
+						"</div>";
+
+}
+function sellerieMoins2(){
+	var txt = document.getElementById("textSellerie2");
+	txt.innerHTML = "Au choix"+			 						
+						"<ul>"+
+							"<li>ORIGINALE : confortable et économique</li>"+
+							"<li>CUIR : pour renforcer le caractère vintage du célo en y assortissant</li>"+
+							"<ul>"+
+								"<li>Sacoche de sekke</li>"+
+								"<li>Ruban de poignées</li>"+
+								"<li>Sangle batterie</li>"+
+							"</ul>"+					
+						"</ul>"+
+						'<div class="d-grid gap-2 d-md-flex justify-content-md-end">'+						  	
+					  		'<a class="btn btn-primary" onclick="selleriePlus2()" role="button">En savoir plus</a>'+
 						"</div>";
 
 }

@@ -72,9 +72,22 @@ nav{
 	background-color: orange;
 	color: black;
 }
+.backDegra{
+	background: linear-gradient(#FFFFFF,#D9D9D9);
+}
+
+.backRadia{
+	background:radial-gradient(#FFFFFF,#D9D9D9) ;
+}
 
 a{
 	text-decoration: none;
+}
+
+.col > a{
+	--bs-link-color: #3E3979;
+  	--bs-link-hover-color: #0a58ca;
+  	font-style: italic;
 }
 
 #conteneur{
@@ -95,6 +108,15 @@ img	{
 
 body{
     color: #3E3979;
+    font-size: 24px;
+
+}
+
+nav{
+	font-size: 18px;
+}
+footer{
+	font-size: 18px;
 }
 
 /********* Superposition simple de texte sur une image *******/
@@ -230,6 +252,16 @@ figure{
 
 html{
 	scroll-padding-top: 100px;
+}
+
+.description{
+	height: 80vh;
+	position: relative;
+}
+
+.description div a{
+	position: absolute;
+	bottom: 10px;
 }
 
 /* Footer */

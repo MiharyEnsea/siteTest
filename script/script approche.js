@@ -3,6 +3,9 @@ function changeImage(){
 	var titre = document.getElementById("legendeSourcing");
 	img.src="./Images/Appro VAE neuf 1.png";
 	titre.innerHTML="Sourcing VAE";
+	var but = document.getElementById("boutonAE");
+	but.innerHTML = '<a class="btn btn-primary active" onclick="changeImage();" role="button">Sourcing VAE</a>'+
+				  		'<a class="btn btn-primary" onclick="changeImage2();" role="button">Sourcing BAE</a>';
 
 	return false;
 }
@@ -12,6 +15,9 @@ function changeImage2(){
 	img.src="./Images/Appro BAE recyclé 1.png";
 	var titre = document.getElementById("legendeSourcing");
 	titre.innerHTML="Sourcing B.A.E"
+	var but = document.getElementById("boutonAE");
+	but.innerHTML = '<a class="btn btn-primary" onclick="changeImage();" role="button">Sourcing VAE</a>'+
+				  		'<a class="btn btn-primary active" onclick="changeImage2();" role="button">Sourcing BAE</a>';
 	return false;
 }
 
@@ -52,28 +58,28 @@ function changeEnvironnement(){
 
 function changeEnvironnement2(){
 	var sec = document.getElementById("sectionEnvironnement");
-	sec.innerHTML='<div class="col-6"></div> <div class="col-6 fs-2">'+
+	sec.innerHTML='<div class="col-6 d-none d-md-block"></div> <div class="col-md-6 col-12 fs-2">'+
 				'<div id="titre" class="row">Environnement</div>'+				
-				'<div class="d-grid gap-2 d-md-flex justify-content-md-end pt-1">'+					  	
+				'<div class="d-grid gap-2 d-md-flex justify-content-end pt-1">'+					  	
 			  		'<a class="btn btn-primary" onclick="changeEnvironnement()" role="button">En savoir plus</a>'+
 				'</div>'+
 			'</div>'+
-			'<div id="schema" class="col-3">'+
+			'<div id="schema" class="col-md-3 col-6 anime1">'+
 				'<img src="./Images/Vélo initial 1.png">'+
 				"<h5>Bicyclette d'origine</h5>"+
 				"<p>déjà fabriquée en France => 0 émission de CO<sub>2</sub> supplémentaire</p>"+
 			"</div>"+
-			'<div id="schema" class="col-3">'+
+			'<div id="schema" class="col-md-3 col-6 anime2">'+
 				'<img src="./Images/pièces récupérées 1.png">'+
 				'<h5>Pièces conservées</h5>'+
 				"<p>toutes celles qui n'altèrent pas la fiabilité de la bicyclette</p>"+
 			"</div>"+
-			'<div id="schema" class="col-3">'+
+			'<div id="schema" class="col-md-3 col-6 anime3">'+
 				'<img src="./Images/Composants approvisionnés 1.png">'+
 				"<h5>Composants achetés</h5>"+
 				"<p>pour fiabiliser et électrifier le vélo, avec un effort permanent de sourcing au plus près</p>"+
 			"</div>"+
-			'<div id="schema" class="col-3">'+
+			'<div id="schema" class="col-md-3 col-6 anime4">'+
 				'<img src="./Images/BAE final 1.png">'+				
 				"<h5>Bicyclette à Assistance Electrique</h5>"+
 				"<p>un maximum d'opérations réalisées localement selon les exigences Européennes en matière d'environnement</p>"+
